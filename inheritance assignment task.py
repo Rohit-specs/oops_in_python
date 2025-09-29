@@ -8,8 +8,13 @@ class Vehicle:
         print("Model:",self.model)
         print("Year:",self.year)
 class Car(Vehicle):
-    super().__init(make,model,year)
-    display_info(self)
+    def init(self,make,model,year):
+        super().__init(make,model,year)
+    def display_info(self):
+        super().display_info()
+
+obj=Car("Toyota","don't know about models",2022)
+obj.display_info()
 
 
 
