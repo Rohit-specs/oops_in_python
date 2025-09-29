@@ -3,7 +3,7 @@ from abc import ABC,abstractmethod
 class Shape(ABC):
     @abstractmethod
     def area(self):
-        print("THis will print area")
+        print("This will print area of different shapes")
 class Rectangle(Shape):
     def area(self,l,b):
         print("Area of Rectangle: ",l*b)
